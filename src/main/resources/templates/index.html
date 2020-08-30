@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>DDD sample</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>DDD sample</h1>
+<ul>
+    <ul th:each="circle : ${circles}">
+        <li>ID: <span th:text="${circle.id}"></span>, Name: <span th:text="${circle.name}"></span></li>
+    </ul>
+</ul>
+</body>
+</html>
